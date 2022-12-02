@@ -1,0 +1,24 @@
+Source: libnet-cidr-lite-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Niko Tyni <ntyni@iki.fi>,
+           gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libtest-pod-coverage-perl <!nocheck>,
+                     libtest-pod-perl <!nocheck>,
+                     perl
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libnet-cidr-lite-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libnet-cidr-lite-perl.git
+Homepage: https://metacpan.org/release/Net-CIDR-Lite
+Rules-Requires-Root: no
+
+Package: libnet-cidr-lite-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends}
+Description: module for merging IPv4 or IPv6 CIDR address ranges
+ Net::CIDR::Lite is a faster alternative to Net::CIDR when merging a large
+ number of CIDR address ranges. Works for IPv4 and IPv6 addresses.
